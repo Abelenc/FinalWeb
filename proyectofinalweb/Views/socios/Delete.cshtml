@@ -1,0 +1,160 @@
+﻿@model proyectofinalweb.socios
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar</h2>
+
+<h3>Seguro que quieres borrar esto?</h3>
+<div>
+    <h4>socios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_nacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_nacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.afiliados)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.afiliados)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.membresia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.membresia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lugar_trabajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lugar_trabajo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion_oficina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion_oficina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tel_oficina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tel_oficina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado_miembresia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado_miembresia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_salida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_salida)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>
